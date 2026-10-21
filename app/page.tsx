@@ -41,7 +41,7 @@ export default function Page() {
             <a className="text-link" href="mailto:laverinac@gmail.com">Let&apos;s connect <span>↗</span></a>
           </div>
         </div>
-        <div className="hero-art" aria-label="Photo placeholder and decorative shapes">
+        <div className="hero-art" aria-label="Portrait placeholder and decorative shapes">
           <div className="sun" />
           <div className="shape shape-one" />
           <div className="shape shape-two" />
@@ -74,7 +74,7 @@ export default function Page() {
         <div className="about-grid"><p className="about-lead">I&apos;m currently studying Information Systems at BINUS University. I love sitting at the intersection of people, technology, and visual storytelling.</p><div className="details"><div><b>Education</b><p><strong>2024 — 2028</strong><br />BINUS University<br />Bachelor of Information Systems<br /><small>GPA: 3.59 / 4.00</small></p><p><strong>2020 — 2023</strong><br />SMAK St. Albertus Malang<br />Mathematics &amp; Natural Sciences</p></div><div><b>Toolbox</b><p>Figma · Canva · Tableau<br />Excel · SQL · Python<br />Oracle APEX · ERD · BRD</p></div></div></div>
       </section>
 
-      <section className="contact-section wrap" id="contact"><div className="contact-copy"><p className="eyebrow">let&apos;s make something</p><div className="contact-note">Have a project in mind?<br /><span>Say hi — I don&apos;t bite.</span></div><div className="contact-links"><a href="mailto:laverinac@gmail.com">Email me <span>↗</span></a><a href="https://linkedin.com/in/laverinacandrakirana" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a></div></div><a className="contact-email" href="mailto:laverinac@gmail.com"><span className="email-label">say hello</span>laverinac<br /><em>@gmail.com</em> <span>↗</span></a></section>
+      <section className="contact-section wrap" id="contact"><div className="contact-copy"><p className="eyebrow">let&apos;s make something</p><div className="contact-note">Have a project in mind?<br /><span>Say hi — I don&apos;t bite.</span></div><div className="contact-links"><a href="mailto:laverinac@gmail.com">Email me <span>↗</span></a><a href="https://linkedin.com/in/laverinacandrakirana" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a></div></div><a className="contact-email" href="mailto:laverinac@gmail.com"><span className="email-label">say hello</span>laverinac<br /><em>@gmail.com</em> <span>���</span></a></section>
       <footer className="footer wrap"><span>© 2025 Laverina Candrakirana</span><span>Tangerang, Indonesia</span><a href="https://linkedin.com/in/laverinacandrakirana">LinkedIn ↗</a></footer>
     </main>
   )
