@@ -3,22 +3,15 @@
 import { useState } from 'react'
 
 const projects = [
-  {
-    number: '01',
-    title: 'Copyin',
-    category: 'System Analysis & Design',
-    description: 'A printing and stationery ordering system designed from the ground up — from context diagrams to activity flows.',
-    tags: ['DFD', 'Use Case', 'Figma'],
-    accent: 'mint',
-  },
-  {
-    number: '02',
-    title: 'HireSphere',
-    category: 'UI/UX Design',
-    description: 'A mobile career platform concept that makes job matching, applications, and CV creation feel less overwhelming.',
-    tags: ['Research', 'Wireframes', 'Prototype'],
-    accent: 'peach',
-  },
+  { number: '01', title: 'HireSphere', category: 'UI/UX Design', description: 'Designed a mobile career platform concept in Figma to help users explore job opportunities, manage applications, and create CVs through a clear and user-friendly interface.', tags: ['Figma', 'Mobile App', 'UX'], accent: 'peach' },
+  { number: '02', title: 'Copyin', category: 'System Analysis & Design', description: 'Analyzed and designed a printing and stationery ordering system by preparing system requirements, a context diagram, DFDs, use case diagrams, class diagrams, and activity diagrams.', tags: ['DFD', 'Use Case', 'System Design'], accent: 'mint' },
+  { number: '03', title: 'Furniland', category: 'Web Development', description: 'Developed a web-based furniture marketplace with product browsing, catalog filtering, shopping cart functionality, and administrative features.', tags: ['Web App', 'Marketplace', 'Admin'], accent: 'lavender' },
+  { number: '04', title: 'Healthcare Revenue & Treatment Dashboard', category: 'Data Analytics · Excel', description: 'Created a healthcare dashboard in Microsoft Excel to analyze hospital revenue, patient data, treatment costs, daily patient visits, and service demand through interactive charts and summary metrics.', tags: ['Excel', 'Dashboard', 'Healthcare'], accent: 'yellow' },
+  { number: '05', title: 'Cafe Sales Dashboard', category: 'Data Analytics · Tableau', description: 'Analyzed cafe sales data and developed an interactive dashboard in Tableau to visualize total revenue, transactions, average quantity, spending patterns, monthly sales trends, and payment methods.', tags: ['Tableau', 'Data Viz', 'Analytics'], accent: 'peach' },
+  { number: '06', title: 'Relive', category: 'UI/UX Design', description: 'Designed a wellness app concept with community support, counseling, and meditation features to make mental wellness resources more accessible through a mobile interface.', tags: ['Wellness', 'Figma', 'Mobile App'], accent: 'mint' },
+  { number: '07', title: 'Aqquas', category: 'UI/UX Design', description: 'Designed a UI/UX concept for an aquarium hobbyist app to organize tank-care information and routines in an accessible, user-friendly interface.', tags: ['UI/UX', 'Information Design', 'Figma'], accent: 'lavender' },
+  { number: '08', title: 'MoneyRv', category: 'UI/UX Design', description: 'Designed a mobile app UI/UX concept for an ancient and rare coin marketplace, featuring curated articles, a collector forum, product browsing, checkout, and user profiles.', tags: ['Marketplace', 'Community', 'Prototype'], accent: 'yellow' },
+  { number: '09', title: 'EduLearn', category: 'UI/UX Design', description: 'Designed a mobile learning app UI/UX concept to help students manage courses, schedules, attendance, assignments, and forums, with an integrated chatbot service.', tags: ['EdTech', 'Chatbot', 'Mobile App'], accent: 'peach' },
 ]
 
 export default function Page() {
@@ -81,7 +74,7 @@ export default function Page() {
         <div className="about-grid"><p className="about-lead">I&apos;m currently studying Information Systems at BINUS University. I love sitting at the intersection of people, technology, and visual storytelling.</p><div className="details"><div><b>Education</b><p><strong>2024 — 2028</strong><br />BINUS University<br />Bachelor of Information Systems<br /><small>GPA: 3.59 / 4.00</small></p><p><strong>2020 — 2023</strong><br />SMAK St. Albertus Malang<br />Mathematics &amp; Natural Sciences</p></div><div><b>Toolbox</b><p>Figma · Canva · Tableau<br />Excel · SQL · Python<br />Oracle APEX · ERD · BRD</p></div></div></div>
       </section>
 
-      <section className="contact-section wrap" id="contact"><div className="contact-note">Have a project in mind?<br /><span>Say hi — I don&apos;t bite.</span></div><a className="contact-email" href="mailto:laverinac@gmail.com">laverinac<br /><em>@gmail.com</em> <span>↗</span></a></section>
+      <section className="contact-section wrap" id="contact"><div className="contact-copy"><p className="eyebrow">let&apos;s make something</p><div className="contact-note">Have a project in mind?<br /><span>Say hi — I don&apos;t bite.</span></div><div className="contact-links"><a href="mailto:laverinac@gmail.com">Email me <span>↗</span></a><a href="https://linkedin.com/in/laverinacandrakirana" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a></div></div><a className="contact-email" href="mailto:laverinac@gmail.com"><span className="email-label">say hello</span>laverinac<br /><em>@gmail.com</em> <span>↗</span></a></section>
       <footer className="footer wrap"><span>© 2025 Laverina Candrakirana</span><span>Tangerang, Indonesia</span><a href="https://linkedin.com/in/laverinacandrakirana">LinkedIn ↗</a></footer>
     </main>
   )
