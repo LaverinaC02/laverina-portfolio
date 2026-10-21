@@ -47,7 +47,11 @@ export default function Page() {
           <div className="shape shape-two" />
           <div className="shape shape-three" />
           <div className="photo-frame">
-            <div className="photo-placeholder"><span>your photo</span><strong>here</strong><small>replace me with your portrait</small></div>
+            <img
+                className="photo-image"
+                src="/laverina.jpg"
+                alt="Laverina Candrakirana"
+              />
             <div className="frame-caption">Laverina<br /><em>creative mind</em></div>
           </div>
           <div className="scribble">hi, there!</div>
