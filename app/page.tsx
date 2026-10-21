@@ -33,9 +33,15 @@ export default function Page() {
 
       <section className="hero wrap" id="top">
         <div className="hero-copy">
-          <p className="eyebrow"><span className="status-dot" /> available for internship</p>
-          <h1>Designing ideas<br /><em>into impact.</em></h1>
-          <p className="hero-text">Hi, I&apos;m Laverina — an Information Systems student who turns messy problems into clear, useful experiences through UI/UX and data.</p>
+         
+      <h1>
+        Hi! I&apos;m Laverina Candrakirana<br />
+        <em>Information Systems Student.</em>
+      </h1>
+      
+      <p className="hero-text">
+        I&apos;m an Information Systems student at BINUS University with an interest in UI/UX design, data analytics, and system analysis. I enjoy working on projects that combine technology, problem-solving, and user needs.
+      </p>
           <div className="hero-actions">
             <a className="button button-dark" href="#work">See my work <span>↗</span></a>
             <a className="text-link" href="mailto:laverinac@gmail.com">Let&apos;s connect <span>↗</span></a>
