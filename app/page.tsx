@@ -57,7 +57,7 @@ export default function Page() {
                 src="/laverina.jpg"
                 alt="Laverina Candrakirana"
               />
-            <div className="frame-caption">Laverina<br /><em>creative mind</em></div>
+            {/* <div className="frame-caption">Laverina<br /><em>creative mind</em></div> */}
           </div>
           <div className="scribble">hi, there!</div>
           <div className="sticker">IS<br /><strong>student</strong></div>
