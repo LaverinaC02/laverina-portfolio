@@ -48,14 +48,18 @@ export default function Page() {
             <a className="text-link" href="mailto:laverinac@gmail.com">Let&apos;s connect <span>↗</span></a>
           </div>
         </div>
-        <div className="hero-art" aria-label="Abstract portrait illustration">
+        <div className="hero-art" aria-label="Photo placeholder and decorative shapes">
           <div className="sun" />
           <div className="shape shape-one" />
           <div className="shape shape-two" />
           <div className="shape shape-three" />
-          <div className="portrait-card"><span>LC</span><small>creative<br />problem solver</small></div>
-          <div className="scribble">hello!</div>
+          <div className="photo-frame">
+            <div className="photo-placeholder"><span>your photo</span><strong>here</strong><small>replace me with your portrait</small></div>
+            <div className="frame-caption">Laverina<br /><em>creative mind</em></div>
+          </div>
+          <div className="scribble">hi, there!</div>
           <div className="sticker">IS<br /><strong>student</strong></div>
+          <div className="sparkle">✦</div>
         </div>
       </section>
 
