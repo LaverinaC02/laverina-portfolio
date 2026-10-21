@@ -36,7 +36,6 @@ export default function Page() {
          
       <h1>
         Hi! I&apos;m Laverina Candrakirana<br />
-        <em>Information Systems Student.</em>
       </h1>
       
       <p className="hero-text">
