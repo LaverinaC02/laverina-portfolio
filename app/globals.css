@@ -2095,5 +2095,40 @@ h2 em {
 }
 
 
+/* Project colors based on each concept */
+
+.project-card.blue {
+  background: #dceaff;
+}
+
+.project-card.teal {
+  background: #d5f3ef;
+}
+
+.project-card.beige {
+  background: #f1e5d0;
+}
+
+.project-card.sky {
+  background: #dceeff;
+}
+
+.project-card.pink {
+  background: #f8dce7;
+}
+
+.project-card.aqua {
+  background: #d8f5f5;
+}
+
+.project-card.green {
+  background: #d8efe0;
+}
+
+.project-card.lavender {
+  background: #e9defb;
+}
+
+
 
 
