@@ -150,6 +150,56 @@ export default function Page() {
         </div>
 
       </section>
+
+              </div>
+      </section>
+
+      {/* ABOUT SECTION */}
+      <section className="about-section wrap" id="about">
+        <div className="section-heading">
+          <p className="eyebrow">more about me</p>
+          <h2>
+            Curious by nature,<br />
+            <em>intentional by design.</em>
+          </h2>
+        </div>
+
+        <div className="about-grid">
+          <p className="about-lead">
+            I enjoy using technology and data to understand
+            problems and create useful solutions.
+          </p>
+
+          <div className="details">
+            <div>
+              <b>Education</b>
+              <p>
+                <strong>2024 — 2028</strong><br />
+                BINUS University<br />
+                Bachelor of Information Systems<br />
+                <small>GPA: 3.59 / 4.00</small>
+              </p>
+              <p>
+                <strong>2020 — 2023</strong><br />
+                SMAK St. Albertus Malang<br />
+                Mathematics &amp; Natural Sciences
+              </p>
+            </div>
+
+            <div>
+              <b>Toolbox</b>
+              <p>
+                Figma · Canva · Tableau<br />
+                Excel · SQL · Python<br />
+                Oracle APEX · ERD · BRD
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACT SECTION */}
+      <section className="contact-section wrap" id="contact">
       
       <section className="contact-section wrap" id="contact">
         <div className="contact-copy">
