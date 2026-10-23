@@ -1322,5 +1322,128 @@ h2 em {
 }
 
 
+/* =========================
+   NAVY PROJECT IMAGE BACKGROUND
+========================= */
+
+.project-visual {
+  background: #20213f;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 275px;
+  padding: 16px;
+  overflow: hidden;
+}
+
+.project-image {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  margin: 0;
+  transform: none;
+}
+
+.project-card:hover .project-image {
+  transform: none;
+}
+
+/* =========================
+   CONSISTENT PROJECT CARD LAYOUT
+========================= */
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 25px 26px 24px;
+  background: var(--paper);
+}
+
+.project-info .project-category {
+  margin-bottom: 10px;
+}
+
+.project-info h3 {
+  min-height: 2.2em;
+  margin-bottom: 10px;
+}
+
+.project-info > p:not(.project-category) {
+  min-height: 4.5em;
+  margin-bottom: 0;
+}
+
+/* Keep skill tags aligned */
+
+.project-info .tags {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+/* =========================
+   VIEW PROJECT DETAILS
+========================= */
+
+.project-explore {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 12px;
+  border-top: 1px solid var(--line);
+  margin-top: 20px;
+  padding-top: 18px;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.project-explore > span {
+  flex-shrink: 0;
+  color: #ee674d;
+  font-size: 18px;
+  transition: transform 180ms ease;
+}
+
+.project-card:hover .project-explore > span {
+  transform: translate(3px, -3px);
+}
+
+@media (max-width: 700px) {
+  .project-visual {
+    height: 230px;
+    padding: 12px;
+  }
+
+  .project-info {
+    padding: 22px 20px;
+  }
+
+  .project-info h3 {
+    min-height: 0;
+  }
+
+  .project-info > p:not(.project-category) {
+    min-height: 0;
+  }
+}
+
+
+
 
 
