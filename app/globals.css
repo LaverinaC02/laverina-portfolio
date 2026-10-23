@@ -1201,7 +1201,7 @@ h2 em {
 /* Remove the old floating image hint */
 
 .project-image-hint {
-  display: none;
+  display: none !important;
 }
 
 /* Project information and tags */
