@@ -45,7 +45,7 @@ export const projects: Project[] = [
     description:
       'Analyzed and designed a printing and stationery ordering system using system requirements and modeling diagrams.',
     overview:
-      'Copyin is a system analysis and design project focused on a printing and stationery ordering system. The work includes documenting requirements and representing system processes and structure through modeling diagrams.',
+      'Copyin is a system analysis and design project focused on a printing and stationery ordering system, including requirements and system modeling diagrams.',
     role: 'System Analyst & Designer',
     tools: ['System Analysis', 'DFD', 'UML'],
     tags: ['System Analysis', 'DFD', 'System Design'],
