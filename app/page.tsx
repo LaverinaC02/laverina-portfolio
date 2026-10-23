@@ -91,6 +91,7 @@ export default function Page() {
           </h2>
         </div>
 
+        
         <div className="project-grid">
           {projects.map((project) => (
             <Link
@@ -103,35 +104,41 @@ export default function Page() {
                 <span>{project.number}</span>
                 <span className="project-arrow">↗</span>
               </div>
-
-              
-          <div className="project-visual">
-            <img
-              className="project-image"
-              src={project.image}
-              alt={`${project.title} project preview`}
-            />
-          </div>
-          
-          <div className="project-info">
-            <p className="project-category">{project.category}</p>
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-          
-            <div className="tags">
-              {project.tags.map((tag) => (
-                <span key={tag}>{tag}</span>
-              ))}
-            </div>
-          
-            <span className="project-explore">
-              View project details <span>↗</span>
-            </span>
-          </div>
-
-
+        
+              <div className="project-visual">
+                <img
+                  className="project-image"
+                  src={project.image}
+                  alt={`${project.title} project preview`}
+                />
+              </div>
+        
+              <div className="project-info">
+                <p className="project-category">
+                  {project.category}
+                </p>
+        
+                <h3>{project.title}</h3>
+        
+                <p>{project.description}</p>
+        
+                <div className="tags">
+                  {project.tags.map((tag) => (
+                    <span key={tag}>{tag}</span>
+                  ))}
+                </div>
+        
+                <span className="project-explore">
+                  View project details <span>↗</span>
+                </span>
+              </div>
+            </Link>
+          ))}
+        </div>
+        
         <div className="projects-more">
           <p>Interested in more of my work?</p>
+        
           <a
             className="button button-dark"
             href="https://github.com/LaverinaCO2"
@@ -141,6 +148,7 @@ export default function Page() {
             Explore more <span>↗</span>
           </a>
         </div>
+
       </section>
 
       <section className="about-section wrap" id="about">
