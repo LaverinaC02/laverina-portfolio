@@ -150,75 +150,16 @@ export default function Page() {
         </div>
 
       </section>
-
       
-      <section className="about-section wrap" id="about">
-        <div className="section-heading">
-          <p className="eyebrow">more about me</p>
-          <h2>
-            Curious by nature,<br />
-            <em>intentional by design.</em>
-          </h2>
-        </div>
-      
-        <div className="about-grid">
-          <p className="about-lead">
-            I enjoy using technology and data to understand
-            problems and create useful solutions.
-          </p>
-      
-          <div className="details">
-            <div>
-              <b>Education</b>
-              <p>
-                <strong>2024 — 2028</strong><br />
-                BINUS University<br />
-                Bachelor of Information Systems<br />
-                <small>GPA: 3.59 / 4.00</small>
-              </p>
-              <p>
-                <strong>2020 — 2023</strong><br />
-                SMAK St. Albertus Malang<br />
-                Mathematics &amp; Natural Sciences
-              </p>
-            </div>
-      
-            <div>
-              <b>Toolbox</b>
-              <p>
-                Figma · Canva · Tableau<br />
-                Excel · SQL · Python<br />
-                Oracle APEX · ERD · BRD
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
       <section className="contact-section wrap" id="contact">
         <div className="contact-copy">
           <p className="eyebrow">let&apos;s connect</p>
-            <a className="contact-email" href="mailto:laverinac@gmail.com">
-              <span className="email-label">
-                I&apos;d love to hear from you
-              </span>
-              laverinac<br />
-              <em>@gmail.com</em> ↗
-            </a>
 
-
-
-          
-      <section className="contact-section wrap" id="contact">
-        <div className="contact-copy">
-          <p className="eyebrow">let&apos;s connect</p>
-      
           <div className="contact-note">
             Open to internship<br />
             <span>opportunities.</span>
           </div>
-      
+
           <div className="contact-links">
             <a href="mailto:laverinac@gmail.com">
               Email me <span>↗</span>
@@ -232,13 +173,16 @@ export default function Page() {
             </a>
           </div>
         </div>
-      
+
         <a className="contact-email" href="mailto:laverinac@gmail.com">
-          <span className="email-label">I&apos;d love to hear from you</span>
+          <span className="email-label">
+            I&apos;d love to hear from you
+          </span>
           laverinac<br />
           <em>@gmail.com</em> <span>↗</span>
         </a>
       </section>
+
 
 
       <footer className="footer wrap">
