@@ -200,10 +200,14 @@ export default function Page() {
       <section className="contact-section wrap" id="contact">
         <div className="contact-copy">
           <p className="eyebrow">let&apos;s connect</p>
-            <div className="contact-note">
-              I&apos;d love to hear<br />
-              <span>from you.</span>
-            </div>
+            <a className="contact-email" href="mailto:laverinac@gmail.com">
+              <span className="email-label">
+                I&apos;d love to hear from you
+              </span>
+              laverinac<br />
+              <em>@gmail.com</em> ↗
+            </a>
+
 
 
           <div className="contact-links">
