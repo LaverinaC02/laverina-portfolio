@@ -2130,5 +2130,161 @@ h2 em {
 }
 
 
+/* ===== CONTACT SECTION FIX ===== */
+
+.contact-section {
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.contact-copy {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-note {
+  font-size: clamp(28px, 3.5vw, 42px);
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  line-height: 1.15;
+}
+
+.contact-note span {
+  color: #ee674d;
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+
+.contact-email {
+  display: block;
+  flex-shrink: 0;
+  text-align: right;
+  font-size: clamp(31px, 5vw, 64px);
+  font-weight: 900;
+  letter-spacing: -0.08em;
+  line-height: 0.95;
+}
+
+.email-label {
+  display: block;
+  margin-bottom: 18px;
+  color: #ee674d;
+  font-family: Georgia, serif;
+  font-size: clamp(22px, 3vw, 34px);
+  font-weight: 400;
+  letter-spacing: -1px;
+  line-height: 1.15;
+}
+
+/* ===== PROJECT COLORS ===== */
+
+.project-card.blue {
+  background: #dceaff;
+}
+
+.project-card.teal {
+  background: #d5f3ef;
+}
+
+.project-card.beige {
+  background: #f1e5d0;
+}
+
+.project-card.sky {
+  background: #dceeff;
+}
+
+.project-card.pink {
+  background: #f8dce7;
+}
+
+.project-card.aqua {
+  background: #d8f5f5;
+}
+
+.project-card.green {
+  background: #d8efe0;
+}
+
+.project-card.lavender {
+  background: #e9defb;
+}
+
+/* Match the top strip to each project's color */
+
+.project-card.blue .project-top,
+.project-card.blue .project-visual {
+  background: #dceaff;
+}
+
+.project-card.teal .project-top,
+.project-card.teal .project-visual {
+  background: #d5f3ef;
+}
+
+.project-card.beige .project-top,
+.project-card.beige .project-visual {
+  background: #f1e5d0;
+}
+
+.project-card.sky .project-top,
+.project-card.sky .project-visual {
+  background: #dceeff;
+}
+
+.project-card.pink .project-top,
+.project-card.pink .project-visual {
+  background: #f8dce7;
+}
+
+.project-card.aqua .project-top,
+.project-card.aqua .project-visual {
+  background: #d8f5f5;
+}
+
+.project-card.green .project-top,
+.project-card.green .project-visual {
+  background: #d8efe0;
+}
+
+.project-card.lavender .project-top,
+.project-card.lavender .project-visual {
+  background: #e9defb;
+}
+
+/* Keep screenshots fully visible */
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  transform: none;
+}
+
+.project-card:hover .project-image {
+  transform: none;
+}
+
+/* Mobile layout */
+
+@media (max-width: 700px) {
+  .contact-section {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 36px;
+    padding: 40px 24px;
+  }
+
+  .contact-email {
+    max-width: 100%;
+    text-align: left;
+    overflow-wrap: anywhere;
+  }
+}
+
+
+
 
 
