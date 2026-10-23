@@ -14,6 +14,8 @@ export type Project = {
   outcome: string
   projectUrl?: string
   projectUrlLabel?: string
+  downloadUrl?: string
+  downloadLabel?: string
 }
 
 export const projects: Project[] = [
@@ -73,6 +75,8 @@ export const projects: Project[] = [
     image: '/projects/furniland.png',
     outcome:
       'A furniture marketplace project with product browsing, catalog filtering, shopping cart, and admin features.',
+    downloadUrl: '/Furniland.zip',
+    downloadLabel: 'Download Source Code (.zip)',
   },
   {
     number: '04',
@@ -90,6 +94,8 @@ export const projects: Project[] = [
     image: '/projects/healthcaredb.png',
     outcome:
       'An Excel dashboard for reviewing healthcare metrics and exploring patterns in patient activity and treatment costs.',
+    downloadUrl: '/Healthcare%20Dashboard.xlsx',
+    downloadLabel: 'Download Excel Dashboard (.xlsx)',
   },
   {
     number: '05',
