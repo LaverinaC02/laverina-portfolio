@@ -106,6 +106,29 @@ export default async function ProjectDetailPage({ params }: Props) {
         </section>
       )}
 
+      
+      {project.downloadUrl && (
+        <section className="detail-cta">
+          <div>
+            <p className="detail-eyebrow">DOWNLOAD PROJECT FILE</p>
+            <h2>Explore the work yourself.</h2>
+            <p>
+              Download the project file to explore the implementation
+              or review the dashboard.
+            </p>
+          </div>
+      
+          <a
+            href={project.downloadUrl}
+            download
+            className="detail-button"
+          >
+            {project.downloadLabel ?? 'Download Project'} <span>↓</span>
+          </a>
+        </section>
+      )}
+
+
       <footer className="detail-footer">
         <Link href="/#work">← Back to all projects</Link>
         <Link href="/#contact">Get in touch ↗</Link>
