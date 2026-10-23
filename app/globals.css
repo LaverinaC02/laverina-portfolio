@@ -1175,3 +1175,92 @@ h2 em {
 }
 
 
+/* Project image: show the full screenshot */
+
+.project-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 275px;
+  padding: 12px;
+  overflow: hidden;
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  position: static;
+  z-index: auto;
+  transform: none;
+}
+
+/* Remove the old floating image hint */
+
+.project-image-hint {
+  display: none;
+}
+
+/* Project information and tags */
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: var(--paper);
+  padding: 25px 26px 24px;
+}
+
+.project-info .tags {
+  margin-top: 20px;
+}
+
+/* Detail link below the skill tags */
+
+.project-explore {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--line);
+  margin-top: 22px;
+  padding-top: 16px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.project-explore span {
+  font-size: 18px;
+  color: #ee674d;
+}
+
+.project-card:hover .project-explore {
+  color: #ee674d;
+}
+
+/* Explore more: separate from every project card */
+
+.projects-more {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  clear: both;
+  width: 100%;
+  padding: 48px 0 16px;
+  margin-top: 0;
+  z-index: 1;
+}
+
+.projects-more .button {
+  position: static;
+  display: inline-flex;
+  align-items: center;
+}
+
+
+
