@@ -1444,6 +1444,45 @@ h2 em {
 }
 
 
+/* Project detail: full-width image without colored background */
+
+.detail-image-panel {
+  display: block;
+  width: 100%;
+  min-height: 0;
+  max-height: none;
+  padding: 0;
+  margin: 36px 0;
+  background: transparent !important;
+  border: none;
+  border-radius: 0;
+  overflow: visible;
+}
+
+.detail-image-panel.peach,
+.detail-image-panel.mint,
+.detail-image-panel.lavender,
+.detail-image-panel.yellow {
+  background: transparent !important;
+}
+
+.detail-image-panel img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  max-height: none;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+  .detail-image-panel {
+    margin: 24px 0;
+  }
+}
+
+
 
 
 
