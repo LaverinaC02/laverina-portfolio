@@ -393,6 +393,16 @@ h2 em {
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-card {
   border: 1.5px solid var(--ink);
   border-radius: 5px;
   overflow: hidden;
