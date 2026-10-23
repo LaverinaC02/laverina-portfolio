@@ -31,7 +31,7 @@ export const projects: Project[] = [
     role: 'UI/UX Designer',
     tools: ['Figma'],
     tags: ['UI/UX', 'Mobile App', 'Career'],
-    accent: 'peach',
+    accent: 'blue',
     image: '/projects/hiresphere.png',
     outcome:
       'A mobile app design concept focused on helping users explore career opportunities and manage their job search activities.',
@@ -51,7 +51,7 @@ export const projects: Project[] = [
     role: 'System Analyst & Designer',
     tools: ['System Analysis', 'DFD', 'UML'],
     tags: ['System Analysis', 'DFD', 'System Design'],
-    accent: 'mint',
+    accent: 'teal',
     image: '/projects/copyin.png',
     outcome:
       'System analysis and design documentation for a printing and stationery ordering system.',
@@ -71,7 +71,7 @@ export const projects: Project[] = [
     role: 'Web Developer',
     tools: ['Web Development', 'Database'],
     tags: ['Web App', 'Marketplace', 'E-commerce'],
-    accent: 'lavender',
+    accent: 'beige',
     image: '/projects/furniland.png',
     outcome:
       'A furniture marketplace project with product browsing, catalog filtering, shopping cart, and admin features.',
@@ -90,7 +90,7 @@ export const projects: Project[] = [
     role: 'Data Analyst',
     tools: ['Microsoft Excel', 'PivotTable', 'Charts'],
     tags: ['Excel', 'Dashboard', 'Healthcare'],
-    accent: 'yellow',
+    accent: 'blue',
     image: '/projects/healthcaredb.png',
     outcome:
       'An Excel dashboard for reviewing healthcare metrics and exploring patterns in patient activity and treatment costs.',
@@ -109,7 +109,7 @@ export const projects: Project[] = [
     role: 'Data Analyst',
     tools: ['Tableau', 'Data Visualization'],
     tags: ['Tableau', 'Dashboard', 'Sales Analytics'],
-    accent: 'peach',
+    accent: 'sky',
     image: '/projects/cafedb.png',
     outcome:
       'An interactive dashboard for exploring cafe sales performance, monthly trends, quantities, and payment methods.',
@@ -129,7 +129,7 @@ export const projects: Project[] = [
     role: 'UI/UX Designer',
     tools: ['Figma'],
     tags: ['UI/UX', 'Wellness', 'Mobile App'],
-    accent: 'mint',
+    accent: 'pink',
     image: '/projects/relive.png',
     outcome:
       'A mobile wellness app concept designed around accessible support and wellness activities.',
@@ -149,7 +149,7 @@ export const projects: Project[] = [
     role: 'UI/UX Designer',
     tools: ['Figma'],
     tags: ['UI/UX', 'Aquarium', 'Mobile App'],
-    accent: 'lavender',
+    accent: 'aqua',
     image: '/projects/aqquas.png',
     outcome:
       'An aquarium hobbyist app concept focused on organizing information and aquarium maintenance activities.',
@@ -169,7 +169,7 @@ export const projects: Project[] = [
     role: 'UI/UX Designer',
     tools: ['Figma'],
     tags: ['UI/UX', 'Marketplace', 'Community'],
-    accent: 'yellow',
+    accent: 'green',
     image: '/projects/moneyrv.png',
     outcome:
       'A mobile marketplace concept connecting rare coin browsing, collector discussions, articles, and checkout.',
@@ -189,7 +189,7 @@ export const projects: Project[] = [
     role: 'UI/UX Designer',
     tools: ['Figma'],
     tags: ['UI/UX', 'EdTech', 'Mobile App'],
-    accent: 'peach',
+    accent: 'lavender',
     image: '/projects/edulearn.png',
     outcome:
       'A learning app concept covering course information, schedules, attendance, assignments, forums, and chatbot access.',
