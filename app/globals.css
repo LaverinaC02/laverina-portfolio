@@ -668,15 +668,18 @@ h2 em {
   text-align: right;
 }
 
+
 .email-label {
   color: #ee674d;
   display: block;
   font-family: Georgia, serif;
-  font-size: 16px;
+  font-size: clamp(22px, 3vw, 34px);
   font-weight: 400;
-  letter-spacing: 0;
-  margin-bottom: 16px;
+  letter-spacing: -1px;
+  line-height: 1.15;
+  margin-bottom: 18px;
 }
+
 
 .contact-email em {
   color: #ee674d;
