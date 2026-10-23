@@ -151,24 +151,22 @@ export default function Page() {
 
       </section>
 
+      
       <section className="about-section wrap" id="about">
         <div className="section-heading">
           <p className="eyebrow">more about me</p>
-            <p className="about-lead">
-              I enjoy exploring how people, technology, and data
-              come together to solve real-world problems. I&apos;m
-              passionate about learning new things and turning ideas
-              into thoughtful, practical solutions.
-            </p>
+          <h2>
+            Curious by nature,<br />
+            <em>intentional by design.</em>
+          </h2>
         </div>
-
+      
         <div className="about-grid">
           <p className="about-lead">
-            I&apos;m currently studying Information Systems at BINUS
-            University. I&apos;m interested in the intersection of
-            people, technology, and data-driven problem-solving.
+            I enjoy using technology and data to understand
+            problems and create useful solutions.
           </p>
-
+      
           <div className="details">
             <div>
               <b>Education</b>
@@ -184,7 +182,7 @@ export default function Page() {
                 Mathematics &amp; Natural Sciences
               </p>
             </div>
-
+      
             <div>
               <b>Toolbox</b>
               <p>
@@ -196,6 +194,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+
 
       <section className="contact-section wrap" id="contact">
         <div className="contact-copy">
@@ -210,6 +209,16 @@ export default function Page() {
 
 
 
+          
+      <section className="contact-section wrap" id="contact">
+        <div className="contact-copy">
+          <p className="eyebrow">let&apos;s connect</p>
+      
+          <div className="contact-note">
+            Open to internship<br />
+            <span>opportunities.</span>
+          </div>
+      
           <div className="contact-links">
             <a href="mailto:laverinac@gmail.com">
               Email me <span>↗</span>
@@ -223,13 +232,14 @@ export default function Page() {
             </a>
           </div>
         </div>
-
+      
         <a className="contact-email" href="mailto:laverinac@gmail.com">
-          <span className="email-label">say hello</span>
+          <span className="email-label">I&apos;d love to hear from you</span>
           laverinac<br />
           <em>@gmail.com</em> <span>↗</span>
         </a>
       </section>
+
 
       <footer className="footer wrap">
         <span>© 2026 Laverina Candrakirana</span>
