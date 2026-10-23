@@ -154,10 +154,12 @@ export default function Page() {
       <section className="about-section wrap" id="about">
         <div className="section-heading">
           <p className="eyebrow">more about me</p>
-          <h2>
-            Curious by nature,<br />
-            <em>intentional by design.</em>
-          </h2>
+            <p className="about-lead">
+              I enjoy exploring how people, technology, and data
+              come together to solve real-world problems. I&apos;m
+              passionate about learning new things and turning ideas
+              into thoughtful, practical solutions.
+            </p>
         </div>
 
         <div className="about-grid">
@@ -198,10 +200,11 @@ export default function Page() {
       <section className="contact-section wrap" id="contact">
         <div className="contact-copy">
           <p className="eyebrow">let&apos;s connect</p>
-          <div className="contact-note">
-            Have a project in mind?<br />
-            <span>Let&apos;s talk.</span>
-          </div>
+            <div className="contact-note">
+              I&apos;d love to hear<br />
+              <span>from you.</span>
+            </div>
+
 
           <div className="contact-links">
             <a href="mailto:laverinac@gmail.com">
