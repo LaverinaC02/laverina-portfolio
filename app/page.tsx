@@ -193,13 +193,52 @@ export default function Page() {
 
       <section className="work-section wrap" id="work">
         <div className="section-heading"><p className="eyebrow">selected projects</p><h2>A little bit of<br /><em>what I&apos;ve made.</em></h2></div>
-        <div className="project-grid">
-          {projects.map((project) => <article className={`project-card ${project.accent}`} key={project.title}>
-            <div className="project-top"><span>{project.number}</span><span className="project-arrow">↗</span></div>
-            <div className="project-visual"><div className="mockup-window"><div className="window-bar"><i /><i /><i /></div><div className="mockup-content"><b>{project.title}</b><div className="mock-lines"><span /><span /><span /></div><div className="mock-pill">explore →</div></div></div></div>
-            <div className="project-info"><p className="project-category">{project.category}</p><h3>{project.title}</h3><p>{project.description}</p><div className="tags">{project.tags.map(tag => <span key={tag}>{tag}</span>)}</div></div>
-          </article>)}
+        
+<div className="project-grid">
+  {projects.map((project) => (
+    <article
+      className={`project-card ${project.accent}`}
+      key={project.title}
+    >
+      <div className="project-top">
+        <span>{project.number}</span>
+        <span className="project-arrow">↗</span>
+      </div>
+
+      <div className="project-visual">
+        <img
+          className="project-image"
+          src={project.image}
+          alt={`${project.title} project preview`}
+          onError={(event) => {
+            event.currentTarget.style.display = 'none'
+            event.currentTarget.nextElementSibling?.classList.add('is-visible')
+          }}
+        />
+
+        <div className="project-placeholder">
+          <span className="placeholder-number">{project.number}</span>
+          <span className="placeholder-title">{project.title}</span>
+          <span className="placeholder-category">{project.category}</span>
+          <span className="placeholder-label">PROJECT PREVIEW</span>
         </div>
+      </div>
+
+      <div className="project-info">
+        <p className="project-category">{project.category}</p>
+        <h3>{project.title}</h3>
+        <p>{project.description}</p>
+
+        <div className="tags">
+          {project.tags.map((tag) => (
+            <span key={tag}>{tag}</span>
+          ))}
+        </div>
+      </div>
+    </article>
+  ))}
+</div>
+
       </section>
 
       <section className="about-section wrap" id="about">
