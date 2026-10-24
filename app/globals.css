@@ -51,21 +51,21 @@ a {
 ========================= */
 
 
-.nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
 
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
   width: 100%;
   box-sizing: border-box;
+
   background: rgba(255, 249, 252, 0.96);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
 
   border-bottom: 1px solid rgba(47, 31, 59, 0.12);
 }
+
 
 
 .brand {
@@ -2440,11 +2440,6 @@ img {
     flex-wrap: wrap;
     gap: 14px;
   }
-}
-
-
-.site-shell {
-  padding-top: 76px;
 }
 
 html {
