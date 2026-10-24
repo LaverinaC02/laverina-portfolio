@@ -2841,7 +2841,8 @@ body {
 }
 
 
-/* PROJECT IMAGES — FILL THE CARD WIDTH */
+
+/* PROJECT IMAGE — BIG, FULL, NOT CROPPED */
 
 .project-visual {
   width: 100%;
@@ -2851,24 +2852,25 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: transparent;
 }
 
 .project-visual .project-image {
   display: block;
   width: 100%;
   height: 100%;
-  max-width: none;
-  margin: 0;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
+  margin: 0;
+  padding: 0;
   transform: none;
 }
 
 @media (max-width: 700px) {
   .project-visual {
     height: 260px;
-    padding: 0;
   }
 }
+
 
 
