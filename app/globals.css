@@ -2287,6 +2287,152 @@ h2 em {
 }
 
 
+/* Sticky navigation */
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 249, 252, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(47, 31, 59, 0.12);
+  transition: box-shadow 0.25s ease;
+}
+
+/* Smooth navigation */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+#top,
+#about,
+#work,
+#contact {
+  scroll-margin-top: 90px;
+}
+
+/* Menu highlight */
+
+.nav-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 13px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background: #ffe49c;
+  color: #382342;
+}
+
+.nav-links a:focus-visible {
+  outline: 2px solid #ee674d;
+  outline-offset: 3px;
+}
+
+/* Responsive images */
+
+img {
+  max-width: 100%;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .wrap {
+    width: min(100% - 40px, 100%);
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .wrap {
+    width: calc(100% - 32px);
+  }
+
+  .nav {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .nav-links.is-open {
+    z-index: 1001;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .hero h1 {
+    font-size: clamp(36px, 10vw, 52px);
+    overflow-wrap: anywhere;
+  }
+
+  .about-grid,
+  .details {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    min-width: 0;
+  }
+
+  .project-visual {
+    min-width: 0;
+  }
+
+  .project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .contact-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .contact-email {
+    max-width: 100%;
+    font-size: clamp(32px, 9vw, 54px);
+    overflow-wrap: anywhere;
+    text-align: left;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+}
+
+
+
 
 
 
