@@ -48,33 +48,32 @@ export default function Page() {
           {menuOpen ? 'Close' : 'Menu'}
         </button>
 
-       
-      <div className={`nav-links ${menuOpen ? 'is-open' : ''}`}>
-        <a
-          href="#work"
-          className={activeSection === 'work' ? 'active' : ''}
-          onClick={() => setMenuOpen(false)}
-        >
-          Work
-        </a>
-      
-        <a
-          href="#about"
-          className={activeSection === 'about' ? 'active' : ''}
-          onClick={() => setMenuOpen(false)}
-        >
-          About
-        </a>
-      
-        <a
-          href="#contact"
-          className={activeSection === 'contact' ? 'active' : ''}
-          onClick={() => setMenuOpen(false)}
-        >
-          Contact
-        </a>
-      </div>
+        <div className={`nav-links ${menuOpen ? 'is-open' : ''}`}>
+          <a
+            href="#about"
+            className={activeSection === 'about' ? 'active' : ''}
+            onClick={() => setMenuOpen(false)}
+          >
+            About
+          </a>
 
+          <a
+            href="#work"
+            className={activeSection === 'work' ? 'active' : ''}
+            onClick={() => setMenuOpen(false)}
+          >
+            Work
+          </a>
+
+          <a
+            href="#contact"
+            className={activeSection === 'contact' ? 'active' : ''}
+            onClick={() => setMenuOpen(false)}
+          >
+            Contact
+          </a>
+        </div>
+      </nav>
 
       <section className="hero wrap" id="top">
         <div className="hero-copy">
@@ -91,7 +90,7 @@ export default function Page() {
             <a className="button button-dark" href="#work">
               See my work <span>↗</span>
             </a>
-            <a className="text-link" href="mailto:laverinac@gmail.com">
+            <a className="text-link" href="#contact">
               Let&apos;s connect <span>↗</span>
             </a>
           </div>
@@ -137,75 +136,6 @@ export default function Page() {
           </h2>
         </div>
 
-      <section className="work-section wrap" id="work">
-        <div className="section-heading">
-          <p className="eyebrow">selected projects</p>
-          <h2>
-            A little bit of<br />
-            <em>what I&apos;ve made.</em>
-          </h2>
-        </div>
-
-        
-        <div className="project-grid">
-          {projects.map((project) => (
-            <Link
-              href={`/projects/${project.slug}`}
-              className={`project-card ${project.accent}`}
-              key={project.title}
-              aria-label={`View details for ${project.title}`}
-            >
-              <div className="project-top">
-                <span>{project.number}</span>
-                <span className="project-arrow">↗</span>
-              </div>
-        
-              <div className="project-visual">
-                <img
-                  className="project-image"
-                  src={project.image}
-                  alt={`${project.title} project preview`}
-                />
-              </div>
-        
-              <div className="project-info">
-                <p className="project-category">
-                  {project.category}
-                </p>
-        
-                <h3>{project.title}</h3>
-        
-                <p>{project.description}</p>
-        
-                <div className="tags">
-                  {project.tags.map((tag) => (
-                    <span key={tag}>{tag}</span>
-                  ))}
-                </div>
-        
-                <span className="project-explore">
-                  View project details <span>↗</span>
-                </span>
-              </div>
-            </Link>
-          ))}
-        </div>
-        
-        <div className="projects-more">
-          <p>Interested in more of my work?</p>
-        
-          <a
-            className="button button-dark"
-            href="https://github.com/LaverinaCO2"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Explore more <span>↗</span>
-          </a>
-        </div>
-
-      </section>
-
         <div className="about-grid">
           <p className="about-lead">
             I enjoy using technology and data to understand
@@ -237,6 +167,69 @@ export default function Page() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* PROJECTS SECTION */}
+      <section className="work-section wrap" id="work">
+        <div className="section-heading">
+          <p className="eyebrow">selected projects</p>
+          <h2>
+            A little bit of<br />
+            <em>what I&apos;ve made.</em>
+          </h2>
+        </div>
+
+        <div className="project-grid">
+          {projects.map((project) => (
+            <Link
+              href={`/projects/${project.slug}`}
+              className={`project-card ${project.accent}`}
+              key={project.title}
+              aria-label={`View details for ${project.title}`}
+            >
+              <div className="project-top">
+                <span>{project.number}</span>
+                <span className="project-arrow">↗</span>
+              </div>
+
+              <div className="project-visual">
+                <img
+                  className="project-image"
+                  src={project.image}
+                  alt={`${project.title} project preview`}
+                />
+              </div>
+
+              <div className="project-info">
+                <p className="project-category">{project.category}</p>
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+
+                <div className="tags">
+                  {project.tags.map((tag) => (
+                    <span key={tag}>{tag}</span>
+                  ))}
+                </div>
+
+                <span className="project-explore">
+                  View project details <span>↗</span>
+                </span>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        <div className="projects-more">
+          <p>Interested in more of my work?</p>
+          <a
+            className="button button-dark"
+            href="https://github.com/LaverinaCO2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Explore more <span>↗</span>
+          </a>
         </div>
       </section>
 
@@ -273,8 +266,7 @@ export default function Page() {
         </a>
       </section>
 
-
-
+      {/* FOOTER: NAME AND LOCATION ONLY */}
       <footer className="footer wrap">
         <span>© 2026 Laverina Candrakirana</span>
         <span>Tangerang, Indonesia</span>
