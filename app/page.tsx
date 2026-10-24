@@ -220,19 +220,6 @@ export default function Page() {
           ))}
         </div>
 
-        {/* <div className="projects-more">
-          <p>Interested in more of my work?</p>
-          <a
-            className="button button-dark"
-            href="https://github.com/LaverinaCO2"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Explore more <span>↗</span>
-          </a>
-        </div>
-      </section> */}
-
       {/* CONTACT SECTION */}
       <section className="contact-section wrap" id="contact">
         <div className="contact-copy">
