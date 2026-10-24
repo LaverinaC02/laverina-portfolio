@@ -38,7 +38,7 @@ a {
 }
 
 .site-shell {
-  overflow: hidden;
+  overflow: clip;
 }
 
 .wrap {
