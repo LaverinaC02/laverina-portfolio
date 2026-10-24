@@ -220,7 +220,7 @@ export default function Page() {
           ))}
         </div>
 
-        <div className="projects-more">
+        {/* <div className="projects-more">
           <p>Interested in more of my work?</p>
           <a
             className="button button-dark"
@@ -231,7 +231,7 @@ export default function Page() {
             Explore more <span>↗</span>
           </a>
         </div>
-      </section>
+      </section> */}
 
       {/* CONTACT SECTION */}
       <section className="contact-section wrap" id="contact">
