@@ -7,6 +7,30 @@ import { projects } from '@/lib/projects'
 
 export default function Page() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [activeSection, setActiveSection] = useState('top')
+
+  useEffect(() => {
+    const sections = ['top', 'about', 'work', 'contact']
+
+    const handleScroll = () => {
+      let current = 'top'
+
+      for (const id of sections) {
+        const section = document.getElementById(id)
+
+        if (section && section.getBoundingClientRect().top <= 140) {
+          current = id
+        }
+      }
+
+      setActiveSection(current)
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    handleScroll()
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
     <main className="site-shell">
@@ -24,12 +48,33 @@ export default function Page() {
           {menuOpen ? 'Close' : 'Menu'}
         </button>
 
-        <div className={`nav-links ${menuOpen ? 'is-open' : ''}`}>
-          <a href="#work" onClick={() => setMenuOpen(false)}>Work</a>
-          <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
-          <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
-        </div>
-      </nav>
+       
+      <div className={`nav-links ${menuOpen ? 'is-open' : ''}`}>
+        <a
+          href="#work"
+          className={activeSection === 'work' ? 'active' : ''}
+          onClick={() => setMenuOpen(false)}
+        >
+          Work
+        </a>
+      
+        <a
+          href="#about"
+          className={activeSection === 'about' ? 'active' : ''}
+          onClick={() => setMenuOpen(false)}
+        >
+          About
+        </a>
+      
+        <a
+          href="#contact"
+          className={activeSection === 'contact' ? 'active' : ''}
+          onClick={() => setMenuOpen(false)}
+        >
+          Contact
+        </a>
+      </div>
+
 
       <section className="hero wrap" id="top">
         <div className="hero-copy">
