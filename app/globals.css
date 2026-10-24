@@ -2495,6 +2495,26 @@ html {
 }
 
 
+/* Sticky header fix */
+.site-shell > nav.nav.wrap {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 9999 !important;
+  align-self: start;
+  background: rgba(255, 249, 252, 0.96);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+/* Prevent anchor sections from hiding behind the header */
+#top,
+#about,
+#work,
+#contact {
+  scroll-margin-top: 100px;
+}
+
+
 
 
 
