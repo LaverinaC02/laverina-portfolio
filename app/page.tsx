@@ -82,6 +82,16 @@ export default function Page() {
         </span>
       </div>
 
+      {/* ABOUT SECTION */}
+      <section className="about-section wrap" id="about">
+        <div className="section-heading">
+          <p className="eyebrow">more about me</p>
+          <h2>
+            Curious by nature,<br />
+            <em>intentional by design.</em>
+          </h2>
+        </div>
+
       <section className="work-section wrap" id="work">
         <div className="section-heading">
           <p className="eyebrow">selected projects</p>
@@ -150,16 +160,6 @@ export default function Page() {
         </div>
 
       </section>
-
-      {/* ABOUT SECTION */}
-      <section className="about-section wrap" id="about">
-        <div className="section-heading">
-          <p className="eyebrow">more about me</p>
-          <h2>
-            Curious by nature,<br />
-            <em>intentional by design.</em>
-          </h2>
-        </div>
 
         <div className="about-grid">
           <p className="about-lead">
