@@ -219,6 +219,7 @@ export default function Page() {
             </Link>
           ))}
         </div>
+      </section>
 
       {/* CONTACT SECTION */}
       <section className="contact-section wrap" id="contact">
