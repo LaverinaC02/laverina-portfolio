@@ -151,9 +151,6 @@ export default function Page() {
 
       </section>
 
-              </div>
-      </section>
-
       {/* ABOUT SECTION */}
       <section className="about-section wrap" id="about">
         <div className="section-heading">
@@ -199,8 +196,6 @@ export default function Page() {
       </section>
 
       {/* CONTACT SECTION */}
-      <section className="contact-section wrap" id="contact">
-      
       <section className="contact-section wrap" id="contact">
         <div className="contact-copy">
           <p className="eyebrow">let&apos;s connect</p>
