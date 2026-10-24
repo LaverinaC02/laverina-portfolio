@@ -52,19 +52,22 @@ a {
 
 
 
+
 .nav {
   position: sticky;
   top: 0;
   z-index: 9999;
-  width: 100%;
-  box-sizing: border-box;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 22px;
+  padding-bottom: 22px;
   background: rgba(255, 249, 252, 0.96);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-
   border-bottom: 1px solid rgba(47, 31, 59, 0.12);
 }
+
 
 
 
@@ -2451,6 +2454,33 @@ html {
 #work,
 #contact {
   scroll-margin-top: 90px;
+}
+
+
+.nav.wrap {
+  width: min(100% - 64px, 1200px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brand {
+  flex-shrink: 0;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (max-width: 600px) {
+  .nav.wrap {
+    width: calc(100% - 32px);
+  }
+
+  .nav-links {
+    gap: 6px;
+  }
 }
 
 
