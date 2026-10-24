@@ -278,13 +278,6 @@ export default function Page() {
       <footer className="footer wrap">
         <span>© 2026 Laverina Candrakirana</span>
         <span>Tangerang, Indonesia</span>
-        <a
-          href="https://linkedin.com/in/laverinacandrakirana"
-          target="_blank"
-          rel="noreferrer"
-        >
-          LinkedIn ↗
-        </a>
       </footer>
     </main>
   )
