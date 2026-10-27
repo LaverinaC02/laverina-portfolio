@@ -2881,3 +2881,12 @@ body {
 }
 
 
+.details b {
+  display: block;
+  font-size: 16px !important;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
